@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ 
+            height: 100%; /*O height é usado para o degrade ficar na tela toda, mesmo com barra de rolagem
+            /* Para colocar o degrade, é necessário usar o backround- image;
+            Há varios tipos de degrade, como linear-gradient, radial-gradient...
+            Dentro do linear gradient irá a direção que será o degrade(right, left, bottom, top),pode também ser usado em graus como 90deg, 45 deg, etc 
+            */ 
+        }
+        body{
+            background-image: linear-gradient(45deg, #eb1e1e,#34d1b7, #B97DF4, #9333F2, #451873 20%) ; /*da pra alterar a porcentagem de cada cor na tela também*/
+             /*background-image: radial-gradient(circle, rgb(235, 30, 30),#34d1b7, #B97DF4, #9333F2, #451873)*/
+            background-attachment: fixed
+        }
+        h1{ /* Edição do titulo */
+            color: chartreuse;
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+    <!--Pode pegar a paleta de cores pelos sites e usar a ferrameta de extensão pra extrair cores que sejam interessantes-->
+    
+</body>
+</html>
