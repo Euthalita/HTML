@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body{
+            /*Coloca a imagem ao fundo da tela*/
+            background-image: url('imagens-cap19/pattern002.png');/*Pode colocar o endereço do site em que está a imagem*/
+        }
+        .quadrado{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        #color{
+            background-color: yellowgreen;
+        }
+        #gradiente{
+            background-image: linear-gradient(to top, yellow, rgb(231, 20, 214));
+        }
+        #imagem{
+            background-image: url('imagens-cap19/pattern001.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="color">
+
+    </div>
+    <div class="quadrado" id="gradiente">
+
+    </div>
+    <div class="quadrado" id="imagem">
+
+    </div>
+</body>
+</html>
