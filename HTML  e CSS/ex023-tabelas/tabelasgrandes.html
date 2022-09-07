@@ -10,6 +10,12 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.377);
+        }
         table{
             border-collapse: collapse;
         }
@@ -36,6 +42,7 @@
         Anatomia para tabelas grandes
         TABLE
             Dentro do table temos:
+            CAPTION = legenda da tabela
             THEAD = cabeçalho da tabela
                 TR, TD, TH
             TBODY = corpo
@@ -44,10 +51,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>    
+                <th scope="col">Unidade Federativa</th><!--O scope col informa que esse é o titulo de uma coluna-->
+                <th scope="col">População</th>    
             </tr>
         </thead>
         <tbody>
@@ -74,7 +82,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de habitantes</td>
+                <th scope="row">Total de habitantes</th><!--Informa que o título não é de uma coluna, mas sim de uma linha, ou seja, os dados estão na mesma linha-->
                 <td class="num">85 567 113</td>
             </tr>
         </tfoot>
