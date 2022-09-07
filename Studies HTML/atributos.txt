@@ -1,0 +1,26 @@
+Todos os elementos em HTML podem ter atributos;
+Os atributos fornecem informações adicionais sobre um elemento;
+Os atributos pode ser em pares nome/valor ou apenas o nome, visto que 
+valor é igual ao nome (ex: nome = 'valor')
+
+Veja atributos globais, disponiveis em todas as tags:
+- accesskey
+- class
+- contenteditable
+- data-*
+- dir
+- graddable
+- dropzone
+- hidden
+- id
+- lang
+- spellcheck
+- style
+- tabindex
+- tittle
+- translate
+- 
+
+
+
+
