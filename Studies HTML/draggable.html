@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable</title>
+    <style>
+        #quadrado{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!--O draggable torna o conteúdo arrastavel, pode ser movido pra qualquer lugar
+    Há a possibilidade maior de interaçao com o usuário, como por exemplo, quando você faz o upload de uma pasta para o gitHub, você arrasta a pasta
+
+    O valor padrão desse atributo é false, ou seja, não há motivo para colocar o false e com o false ele não funciona, por isso colocar true
+    -->
+    <button type="button" draggable="true"> Ok</button>
+    <div id="quadrado" draggable="true"></div>
+</body>
+</html>

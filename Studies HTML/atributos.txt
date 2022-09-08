@@ -9,7 +9,7 @@ Veja atributos globais, disponiveis em todas as tags:
 - contenteditable
 - data-*
 - dir
-- graddable
+- draggable
 - dropzone
 - hidden
 - id
@@ -17,7 +17,7 @@ Veja atributos globais, disponiveis em todas as tags:
 - spellcheck
 - style
 - tabindex
-- tittle
+- title
 - translate
 - 
 
