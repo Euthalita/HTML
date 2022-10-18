@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        .maior{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!--O iframe é um "quadro em linha" um frame inline é utilizado para mostrar um conteudo de um site 
+    pode ser externo ou outra página do próprio site, mas o iframe possui um problema de segurança
+    Há sites que possui uma proteção para que o conteúdo não seja exibido dentro de iframes, devido 
+    á esse problema com segurança
+        O tamanho padrão do iframe é de 300x150, ele pode ser configurado no CSS ou direto no HTML,
+    mas o que prevalece é o CSS 
+        O uso do frameborder é a borda do iframe
+
+-->
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando um site com iframe: Meu <a href="https://github.com/Euthalita/HTML-CSS/tree/main/HTML%20%20e%20CSS" target="_blank">gitHub</a></p>
+    <!--é possivel acessar o site nessa mesma página sem sair da mesma com o uso do iframe-->
+    <p>Acessando o site do Curso em video 
+        <iframe class="maior" src="https://www.cursoemvideo.com/" frameborder="0">Curso em video<!--O curso em video só irá aparecer caso o iframe não funcione--></iframe>
+        para aprender a programar
+    </p>
+
+</body>
+</html>
