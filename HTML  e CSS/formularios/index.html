@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Estudos sobre formulário</h1>
+    <!--Sempre quando for criar um formulário, ele tem que estar entre as tags FORM.
+        Usa-se o label junto ao input(SEMPRE), são as etiquetas. Para fazer essa ligação entre ambos, é necessário
+    usar o for do label e o id ou name do input, todos iguais(mesmo nome)
+        A tag form recebe o "action", é um scrip que é disparado após o clique do botão submit(o script action recebe 
+    os dados). Após essa ação, aparece como uma outra pagina que você configura 
+
+    O input tem várias funcionalidades(type), como o text, submit, etc.
+    O input do tipo submit é um botão que envia os dados. O value do submit é o local que recebe o nome do botão.
+
+    O autocomplete (com o OFF ativado) na tag form impede que a caixa de texto fique sugerindo nome, email, etc.
+
+    -->
+    <form action="cadastro.js" autocomplete="off">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="e-mail" id="email">
+        </div>
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+</body>
+</html>
