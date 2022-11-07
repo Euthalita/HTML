@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET e POST</title>
+</head>
+<body>
+    <h1>Uso do get e post</h1>
+    <!-- 
+        O method recebe o get ou o post
+
+        GET
+        - O get é automatico
+        - O uso do get mostra os dados que foram enviados na barra de pesquisa, como
+        e-mail, senha, etc.
+        - O get suporta até 3.000 bytes
+
+        POST
+        - O uso do post não mostra os dados enviados na barra de pesquisa, porém não é o
+        metodo de se garantir a segurança
+        - Suporta envio de fotos
+        - Suporta mais de 3.000 bytes
+        O uso do post impede que os dados apareçam na barra de pesquisa, porém é possivel acessa-lo
+        no devtools
+        Para garantir a segurança é necessário criptografar os dados com https
+
+     -->
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text">
+    </form>
+</body>
+</html>
