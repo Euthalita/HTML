@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+</head>
+<body>
+    <h1>Números e datas</h1>
+    <!--
+        Os inputs:
+         - DATA: é o campo para colocar data, como por exemplo data de nascimento, data de exame, etc
+         -NUMBER: só aceita números.
+            O max e o min é o maior e o menor número que pode se posto
+            Step- é o intervalo entre os números(para colocar números quebrados)
+        -MOUTH: Mostra mês e ano
+        -TIME: Mostra a hora
+        -Value:Pode-se colocar o value, que já deixa o valor no campo. Como por exemplo, é possivel pegar
+        o value de um campo month e adicionar javascript pra aparecer a data atual(é possivel alterar depois)
+    -->
+    <form action="cadastru.js" method="post" autocomplete="on">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required placeholder="Nome completo" autocomplete="name">
+        </div>
+    
+        <div>
+            <label for="media">Média:</label>
+            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 á 10" step="0.1" >
+        </div>
+
+        <div>
+            <label for="mes">Período:</label>
+            <input type="month" name="mes" id="mes" value="2022-11">
+        </div>
+        <div>
+            <label for="data">Data da prova:</label>
+            <input type="date" name="data" id="data" required>
+        </div>
+        <div>
+            <label for="hora">Horário da prova:</label>
+            <input type="time" name="hora" id="hora">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
