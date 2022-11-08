@@ -18,22 +18,32 @@
     O input do tipo submit é um botão que envia os dados. O value do submit é o local que recebe o nome do botão.
 
     O autocomplete (com o OFF ativado) na tag form impede que a caixa de texto fique sugerindo nome, email, etc.
-
+    Os navegadores salvam os dados, então quando for preencher um formulário ele já sugere seu nome, etc.
+    Se o autocomplete for posto no input, ele ajuda e informa qual a função daquela caixa, se é nome, email, senha, etc.
+    Mas é necessário deixar o autocomplete "on" no form para colocar o autocomplete no input.
+    -autocomplete="current-password" : Sugere a senha atual de outro site(pega a senha de algum site como por exemplo, gmail)
+    -autocomplete="new-password": Nova senha
     -->
-    <form action="cadastro.js" autocomplete="off">
+    <form action="cadastro.js" autocomplete="on">
         <div>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" autocomplete="name">
         </div>
 
         <div>
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome">
+            <input type="text" id="sobrenome" autocomplete="" >
         </div>
 
         <div>
             <label for="email">E-mail:</label>
             <input type="email" name="e-mail" id="email">
+        </div>
+
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" autocomplete="current-password">
+
         </div>
 
         <input type="submit" value="Enviar">
