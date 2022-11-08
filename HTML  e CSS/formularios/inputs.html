@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <h1>Configurando o input</h1>
+    <!-- 
+    -Requied
+    O requied é usado no input e só permite que os dados sejam enviados
+    após os campos serem preenchidos
+
+    -Minlength, maxlength
+    Há o minlenght e o maxlenght, que é a quantidade mínima de letras e a
+    quantidade máxima de letras que podem preencher os campos
+
+    -Size
+    Com o SIZE,regula a quantidade de letra que é mostrado na caixa(a caixa pode aceitar 20 letras, 
+    mas se o size estiver com 8, será mostrado apenas 8)
+
+    -Placeholder
+    É a informação que vai dentro da caixa. Exemplo: "Escreva seu nome"
+
+
+    -->
+    <form action="#" method="post" autocomplete="on">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="senha" name="senha" required maxlength="15" size="10" placeholder="Nome completo" autocomplete="cc-name">
+        </div>
+
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="6" maxlength="15" autocomplete="new-password">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
