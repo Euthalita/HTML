@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email e telefone</title>
+</head>
+<body>
+    <h1>Email e Telefones</h1>
+    <!--Inputs
+        -Email: colocar o email, na prática ele só checa se tem o @
+        -Tel: para colocar o telefone
+            Qualquer número que colocar no campo tel será enviado sem requisições, para definir
+        um padrão(filtro) é necessário utilizar expressões regulares(regEx)
+        No html uma expressão regular é colocada dentro de um padrão regular, o "pattern".
+        Toda expressão regular, começa com um ^ e termina com $. Para indicar que são digitos, pode ser \d ou [0-9] e entre
+        {} colocar os digitos. Veja: pattern="[0-9]{4}-[0-9]{4}" (4 digitos - 4 digitos) vai ficar assim xxxx-xxxx
+        Para colocar () na expressão, \(
+            Então se eu quiser acrescentar dd: "^\(\d{2}\)\d{4,5}-\d{4}$"
+        -Fieldset: O fieldset é uma tag para agrupar e separar os campos do formulario, ex: dados pessoais, dados da familia, dados escolares,etc
+        -Legend: Legenda das partes do formulario
+    -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Email completo">
+            </div>
+            <div>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" pattern="^\d{4}-\d{4}$" placeholder="xxxx-xxxx" >
+            </div>
+            <div>
+                <label for="cel">Celular</label>
+                <input type="tel" name="cel" id="cel" required pattern="^\(\d{4,5}-\d{4}" placeholder="(xx)xxxxx-xxxx"><!--{4,5}Entre 4 e 5 digitos-->
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
