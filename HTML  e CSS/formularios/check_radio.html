@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox and radio</title>
+</head>
+<body>
+    <h1>Checkbox and radio</h1>
+    <!--Checkbox e radio são ambos para marcar as opções, a diferença é que o radio 
+    seleciona apenas uma opção, enquanto que o checkbox seleciona várias
+
+    Checkbox: Usa-se junto ao label porque é melhor para selecionar no celular
+    Radio: Para que o radio seja selecionado apenas um, é necessário colocar todos com o mesmo name
+
+    O checked aparece com o campo marcado (pode ser alterado depois)
+    -->
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="f" checked><label for="f">Feminino</label><br>
+            <input type="radio" name="sexo" id="m"><label for="m">Masculino</label><br>
+
+        </fieldset>
+        <fieldset >
+            <legend>Esportes favoritos</legend><!--Para tornar o preenchimento desse campo obrigatório para enviar o formulario, é necessário acrescentar javascript-->
+                <input type="checkbox" name="bask" id="bask"><label for="bask">Basquete</label><br>
+                <input type="checkbox" name="fut" id="fut" checked><label for="fult">Futebol</label><br>
+                <input type="checkbox" name="nat" id="nat"><label for="nat">Natação</label><br>
+                <input type="checkbox" name="vol" id="vol"><label for="vol">Volei</label><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
